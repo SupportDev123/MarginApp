@@ -1,6 +1,7 @@
 /**
  * API Error Handler
  * Provides user-friendly error messages for common API failures
+ * Integrates with server-side error handling system
  */
 
 export interface ApiErrorInfo {
@@ -8,9 +9,36 @@ export interface ApiErrorInfo {
   message: string;
   suggestion: string;
   retryable: boolean;
+  retryAfterSeconds?: number;
 }
 
-export function parseApiError(error: Error | unknown): ApiErrorInfo {
+export interface ServerErrorResponse {
+  code: string;
+  message: string;
+  userMessage?: {
+    title: string;
+    message: string;
+    action?: string;
+    retryAfterSeconds?: number;
+  };
+  shouldRetry: boolean;
+  statusCode: number;
+}
+
+export function parseApiError(error: Error | unknown, errorResponse?: any): ApiErrorInfo {
+  // Check if response has server-side error format
+  if (errorResponse?.userMessage) {
+    const serverError = errorResponse as ServerErrorResponse;
+    const userMsg = serverError.userMessage;
+    return {
+      title: userMsg?.title || "Error",
+      message: userMsg?.message || serverError.message,
+      suggestion: userMsg?.action || "Please try again.",
+      retryable: serverError.shouldRetry || false,
+      retryAfterSeconds: userMsg?.retryAfterSeconds,
+    };
+  }
+
   const errorMessage = error instanceof Error ? error.message.toLowerCase() : String(error).toLowerCase();
   
   // Daily scan limit reached

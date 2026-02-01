@@ -17,7 +17,7 @@ import OpenAI from "openai";
 import type { SoldComp, CompsResult } from "@shared/schema";
 import { cache, cacheKeys } from "./cache-service";
 import { AppError, ErrorCode, toAppError } from "./error-handling";
-import { callEbayWithRetry, callStripeWithRetry, withTimeout } from "./retry-strategy";
+import { callEbayWithRetry, callOpenAIWithRetry, callStripeWithRetry, withTimeout } from "./retry-strategy";
 import { trackApiCall, monitoring } from "./monitoring";
 import { logCompsRequest } from "./comps-logger";
 import { parseCardTitle, getParallelsForCard, isSportsCardCategory } from "@shared/cardParallels";
@@ -2845,21 +2845,23 @@ export async function registerRoutes(
         const [categoryResult, qualityCheckResult] = await Promise.all([
           // Category/brand detection (fast - uses embedding)
           detectCategoryVisual(imageBase64).catch(() => null),
-          // Lightweight quality check (low detail for speed)
+          // Lightweight quality check (low detail for speed) with retry
           (async () => {
             try {
-              const qcResponse = await openai.chat.completions.create({
-                model: 'gpt-4o-mini',
-                messages: [{
-                  role: 'user',
-                  content: [
-                    { type: 'text', text: 'Is this image clear enough to identify an item? Respond with JSON: {"isUsable": true/false, "reason": "brief reason"}' },
-                    { type: 'image_url', image_url: { url: imageDataUrl, detail: 'low' } }
-                  ]
-                }],
-                max_tokens: 100,
-                temperature: 0.1
-              });
+              const qcResponse = await callOpenAIWithRetry(() =>
+                openai.chat.completions.create({
+                  model: 'gpt-4o-mini',
+                  messages: [{
+                    role: 'user',
+                    content: [
+                      { type: 'text', text: 'Is this image clear enough to identify an item? Respond with JSON: {"isUsable": true/false, "reason": "brief reason"}' },
+                      { type: 'image_url', image_url: { url: imageDataUrl, detail: 'low' } }
+                    ]
+                  }],
+                  max_tokens: 100,
+                  temperature: 0.1
+                })
+              );
               const content = qcResponse.choices[0]?.message?.content || '{}';
               const match = content.match(/\{[\s\S]*\}/);
               return match ? JSON.parse(match[0]) : { isUsable: true };
