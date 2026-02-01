@@ -1,0 +1,227 @@
+/* Margin Auction Overlay - Non-interfering decision display */
+
+#margin-overlay-container {
+  position: fixed;
+  z-index: 2147483647;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
+#margin-overlay-container.margin-hidden {
+  opacity: 0;
+  pointer-events: none !important;
+}
+
+/* Main overlay bubble */
+.margin-overlay {
+  background: rgba(15, 15, 20, 0.95);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-width: 140px;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Drag handle - only interactive part */
+.margin-drag-handle {
+  pointer-events: auto;
+  cursor: grab;
+  padding: 6px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.margin-drag-handle:active {
+  cursor: grabbing;
+}
+
+.margin-drag-dots {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  opacity: 0.4;
+}
+
+.margin-drag-dots span {
+  width: 12px;
+  height: 2px;
+  background: white;
+  border-radius: 1px;
+}
+
+.margin-controls {
+  display: flex;
+  gap: 4px;
+}
+
+.margin-btn {
+  pointer-events: auto;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1;
+  transition: color 0.1s, background 0.1s;
+}
+
+.margin-btn:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Decision content */
+.margin-content {
+  padding: 12px;
+}
+
+/* Collapsed view - decision only */
+.margin-content.margin-collapsed {
+  padding: 10px 12px;
+}
+
+/* Decision badge */
+.margin-decision {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.margin-decision.flip {
+  background: hsl(160 70% 38%);
+  color: white;
+}
+
+.margin-decision.skip {
+  background: hsl(0 55% 45%);
+  color: white;
+}
+
+.margin-decision.caution {
+  background: hsl(38 85% 48%);
+  color: white;
+}
+
+.margin-decision.hold {
+  background: hsl(0 0% 42%);
+  color: white;
+}
+
+/* Expanded details */
+.margin-details {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.margin-stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+
+.margin-stat-label {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.margin-stat-value {
+  color: white;
+  font-weight: 500;
+}
+
+.margin-stat-value.positive {
+  color: hsl(160 70% 50%);
+}
+
+.margin-stat-value.negative {
+  color: hsl(0 60% 55%);
+}
+
+/* Confidence bar */
+.margin-confidence-bar {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+
+.margin-confidence-fill {
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+/* Loading state */
+.margin-loading {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+
+.margin-spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: margin-spin 0.8s linear infinite;
+}
+
+@keyframes margin-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Error state */
+.margin-error {
+  padding: 10px 12px;
+  color: hsl(0 60% 60%);
+  font-size: 12px;
+}
+
+/* Position anchoring */
+#margin-overlay-container[data-anchor="top-right"] {
+  top: 20px;
+  right: 20px;
+}
+
+#margin-overlay-container[data-anchor="top-left"] {
+  top: 20px;
+  left: 20px;
+}
+
+#margin-overlay-container[data-anchor="bottom-right"] {
+  bottom: 100px;
+  right: 20px;
+}
+
+#margin-overlay-container[data-anchor="bottom-left"] {
+  bottom: 100px;
+  left: 20px;
+}
+
+/* Custom position from drag */
+#margin-overlay-container[data-anchor="custom"] {
+  /* Position set via inline styles */
+}

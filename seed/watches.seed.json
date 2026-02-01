@@ -1,0 +1,1732 @@
+{
+  "version": "1.0",
+  "category": "watch",
+  "minImagesPerFamily": 6,
+  "families": [
+    {
+      "brand": "Rolex",
+      "modelFamily": "Submariner",
+      "title": "Rolex Submariner",
+      "variant": "Black Dial",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "black",
+        "bezel_type": "ceramic",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800",
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1627910016961-ee310ef3c2e3?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800"
+      ]
+    },
+    {
+      "brand": "Rolex",
+      "modelFamily": "Datejust",
+      "title": "Rolex Datejust",
+      "variant": "Silver Dial",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "silver",
+        "bezel_type": "fluted",
+        "index_type": "baton",
+        "bracelet_type": "jubilee"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1627910016961-ee310ef3c2e3?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800"
+      ]
+    },
+    {
+      "brand": "Rolex",
+      "modelFamily": "Daytona",
+      "title": "Rolex Daytona",
+      "variant": "White Dial",
+      "attributes": {
+        "style_type": "chrono",
+        "dial_color": "white",
+        "bezel_type": "tachymeter",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800"
+      ]
+    },
+    {
+      "brand": "Rolex",
+      "modelFamily": "GMT-Master II",
+      "title": "Rolex GMT-Master II",
+      "variant": "Pepsi Bezel",
+      "attributes": {
+        "style_type": "gmt",
+        "dial_color": "black",
+        "bezel_type": "ceramic_bicolor",
+        "index_type": "baton",
+        "bracelet_type": "jubilee"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1526045431048-f857369baa09?w=800",
+        "https://images.unsplash.com/photo-1518131672697-613becd4fab5?w=800",
+        "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?w=800"
+      ]
+    },
+    {
+      "brand": "Rolex",
+      "modelFamily": "Oyster Perpetual",
+      "title": "Rolex Oyster Perpetual",
+      "variant": "Turquoise Dial",
+      "attributes": {
+        "style_type": "sport",
+        "dial_color": "turquoise",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800",
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800"
+      ]
+    },
+    {
+      "brand": "Omega",
+      "modelFamily": "Speedmaster Professional",
+      "title": "Omega Speedmaster Moonwatch",
+      "variant": "Hesalite",
+      "attributes": {
+        "style_type": "chrono",
+        "dial_color": "black",
+        "bezel_type": "tachymeter",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1627910016961-ee310ef3c2e3?w=800"
+      ]
+    },
+    {
+      "brand": "Omega",
+      "modelFamily": "Seamaster Diver 300M",
+      "title": "Omega Seamaster 300",
+      "variant": "Blue Wave Dial",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "blue",
+        "bezel_type": "ceramic",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "Omega",
+      "modelFamily": "Aqua Terra",
+      "title": "Omega Seamaster Aqua Terra",
+      "variant": "Green Dial",
+      "attributes": {
+        "style_type": "sport",
+        "dial_color": "green",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800",
+        "https://images.unsplash.com/photo-1627910016961-ee310ef3c2e3?w=800"
+      ]
+    },
+    {
+      "brand": "Omega",
+      "modelFamily": "Constellation",
+      "title": "Omega Constellation",
+      "variant": "Blue Dial",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "blue",
+        "bezel_type": "coin_edge",
+        "index_type": "baton",
+        "bracelet_type": "integrated"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800"
+      ]
+    },
+    {
+      "brand": "Omega",
+      "modelFamily": "De Ville",
+      "title": "Omega De Ville Prestige",
+      "variant": "White Dial",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "white",
+        "bezel_type": "smooth",
+        "index_type": "roman",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Seiko",
+      "modelFamily": "Prospex Diver",
+      "title": "Seiko Prospex Turtle",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "black",
+        "bezel_type": "coin_edge",
+        "index_type": "baton",
+        "bracelet_type": "rubber_diver"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "Seiko",
+      "modelFamily": "Seiko 5",
+      "title": "Seiko 5 Sports",
+      "variant": "Blue Dial",
+      "attributes": {
+        "style_type": "field",
+        "dial_color": "blue",
+        "bezel_type": "coin_edge",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800",
+        "https://images.unsplash.com/photo-1627910016961-ee310ef3c2e3?w=800"
+      ]
+    },
+    {
+      "brand": "Seiko",
+      "modelFamily": "Presage",
+      "title": "Seiko Presage Cocktail Time",
+      "variant": "Blue Moon",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "blue",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Seiko",
+      "modelFamily": "Chronograph",
+      "title": "Seiko Flightmaster Chronograph",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "chrono",
+        "dial_color": "black",
+        "bezel_type": "slide_rule",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "Seiko",
+      "modelFamily": "Solar",
+      "title": "Seiko Solar Diver",
+      "variant": "Pepsi",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "blue",
+        "bezel_type": "bicolor",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "Casio",
+      "modelFamily": "G-Shock Digital",
+      "title": "Casio G-Shock DW5600",
+      "variant": "Classic Black",
+      "attributes": {
+        "style_type": "digital",
+        "dial_color": "black",
+        "bezel_type": "none",
+        "index_type": "digital",
+        "bracelet_type": "resin"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1523268755815-fe7c372a0349?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800"
+      ]
+    },
+    {
+      "brand": "Casio",
+      "modelFamily": "G-Shock Analog-Digital",
+      "title": "Casio G-Shock GA2100",
+      "variant": "CasiOak",
+      "attributes": {
+        "style_type": "ana-digi",
+        "dial_color": "black",
+        "bezel_type": "octagonal",
+        "index_type": "mixed",
+        "bracelet_type": "resin"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1523268755815-fe7c372a0349?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800"
+      ]
+    },
+    {
+      "brand": "Casio",
+      "modelFamily": "Edifice",
+      "title": "Casio Edifice Chronograph",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "chrono",
+        "dial_color": "black",
+        "bezel_type": "tachymeter",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "Casio",
+      "modelFamily": "Vintage Digital",
+      "title": "Casio A168WA",
+      "variant": "Silver",
+      "attributes": {
+        "style_type": "digital",
+        "dial_color": "silver",
+        "bezel_type": "none",
+        "index_type": "digital",
+        "bracelet_type": "mesh"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1523268755815-fe7c372a0349?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800"
+      ]
+    },
+    {
+      "brand": "Casio",
+      "modelFamily": "Duro",
+      "title": "Casio Duro MDV106",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "black",
+        "bezel_type": "coin_edge",
+        "index_type": "baton",
+        "bracelet_type": "rubber_diver"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "Citizen",
+      "modelFamily": "Eco-Drive Diver",
+      "title": "Citizen Promaster Diver",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "black",
+        "bezel_type": "coin_edge",
+        "index_type": "baton",
+        "bracelet_type": "rubber_diver"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "Citizen",
+      "modelFamily": "Eco-Drive Chrono",
+      "title": "Citizen Eco-Drive Chronograph",
+      "variant": "Blue",
+      "attributes": {
+        "style_type": "chrono",
+        "dial_color": "blue",
+        "bezel_type": "tachymeter",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "Citizen",
+      "modelFamily": "Eco-Drive Dress",
+      "title": "Citizen Corso",
+      "variant": "Silver Dial",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "silver",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Citizen",
+      "modelFamily": "Promaster",
+      "title": "Citizen Promaster Navihawk",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "pilot",
+        "dial_color": "black",
+        "bezel_type": "slide_rule",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "Citizen",
+      "modelFamily": "Automatic",
+      "title": "Citizen NH8350",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "black",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Invicta",
+      "modelFamily": "Pro Diver",
+      "title": "Invicta Pro Diver 8926OB",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "black",
+        "bezel_type": "coin_edge",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "Invicta",
+      "modelFamily": "Grand Diver",
+      "title": "Invicta Grand Diver",
+      "variant": "Blue",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "blue",
+        "bezel_type": "coin_edge",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "Invicta",
+      "modelFamily": "Speedway",
+      "title": "Invicta Speedway Chronograph",
+      "variant": "Black Gold",
+      "attributes": {
+        "style_type": "chrono",
+        "dial_color": "black",
+        "bezel_type": "tachymeter",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "Invicta",
+      "modelFamily": "Bolt",
+      "title": "Invicta Bolt Zeus",
+      "variant": "Gold",
+      "attributes": {
+        "style_type": "oversized",
+        "dial_color": "gold",
+        "bezel_type": "cable",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "Invicta",
+      "modelFamily": "Reserve",
+      "title": "Invicta Reserve Subaqua",
+      "variant": "Blue",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "blue",
+        "bezel_type": "coin_edge",
+        "index_type": "baton",
+        "bracelet_type": "rubber_diver"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "Timex",
+      "modelFamily": "Weekender",
+      "title": "Timex Weekender",
+      "variant": "Blue Strap",
+      "attributes": {
+        "style_type": "field",
+        "dial_color": "white",
+        "bezel_type": "smooth",
+        "index_type": "numerals",
+        "bracelet_type": "nato"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800",
+        "https://images.unsplash.com/photo-1627910016961-ee310ef3c2e3?w=800"
+      ]
+    },
+    {
+      "brand": "Timex",
+      "modelFamily": "Expedition",
+      "title": "Timex Expedition Scout",
+      "variant": "Green",
+      "attributes": {
+        "style_type": "field",
+        "dial_color": "green",
+        "bezel_type": "smooth",
+        "index_type": "numerals",
+        "bracelet_type": "fabric"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800",
+        "https://images.unsplash.com/photo-1627910016961-ee310ef3c2e3?w=800"
+      ]
+    },
+    {
+      "brand": "Timex",
+      "modelFamily": "Ironman",
+      "title": "Timex Ironman Classic",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "digital",
+        "dial_color": "black",
+        "bezel_type": "none",
+        "index_type": "digital",
+        "bracelet_type": "resin"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1523268755815-fe7c372a0349?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800"
+      ]
+    },
+    {
+      "brand": "Timex",
+      "modelFamily": "Marlin",
+      "title": "Timex Marlin Automatic",
+      "variant": "Blue Dial",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "blue",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Timex",
+      "modelFamily": "Q Timex",
+      "title": "Q Timex Reissue",
+      "variant": "Pepsi",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "blue",
+        "bezel_type": "bicolor",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "Bulova",
+      "modelFamily": "Precisionist",
+      "title": "Bulova Precisionist Chronograph",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "chrono",
+        "dial_color": "black",
+        "bezel_type": "tachymeter",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "Bulova",
+      "modelFamily": "Marine Star",
+      "title": "Bulova Marine Star",
+      "variant": "Blue",
+      "attributes": {
+        "style_type": "sport",
+        "dial_color": "blue",
+        "bezel_type": "coin_edge",
+        "index_type": "baton",
+        "bracelet_type": "rubber_diver"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "Bulova",
+      "modelFamily": "Lunar Pilot",
+      "title": "Bulova Lunar Pilot",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "chrono",
+        "dial_color": "black",
+        "bezel_type": "tachymeter",
+        "index_type": "baton",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "Bulova",
+      "modelFamily": "Classic Dress",
+      "title": "Bulova Classic",
+      "variant": "Silver",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "silver",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Bulova",
+      "modelFamily": "Curv",
+      "title": "Bulova Curv Chronograph",
+      "variant": "Titanium",
+      "attributes": {
+        "style_type": "chrono",
+        "dial_color": "gray",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "rubber_diver"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "Orient",
+      "modelFamily": "Bambino",
+      "title": "Orient Bambino",
+      "variant": "Cream Dial",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "cream",
+        "bezel_type": "smooth",
+        "index_type": "roman",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Orient",
+      "modelFamily": "Mako",
+      "title": "Orient Mako II",
+      "variant": "Blue",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "blue",
+        "bezel_type": "coin_edge",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "Orient",
+      "modelFamily": "Ray",
+      "title": "Orient Ray II",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "black",
+        "bezel_type": "coin_edge",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "Orient",
+      "modelFamily": "Kamasu",
+      "title": "Orient Kamasu",
+      "variant": "Green",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "green",
+        "bezel_type": "coin_edge",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "Orient",
+      "modelFamily": "Sun & Moon",
+      "title": "Orient Sun & Moon",
+      "variant": "White",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "white",
+        "bezel_type": "smooth",
+        "index_type": "roman",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Fossil",
+      "modelFamily": "Grant",
+      "title": "Fossil Grant Chronograph",
+      "variant": "Brown Leather",
+      "attributes": {
+        "style_type": "chrono",
+        "dial_color": "blue",
+        "bezel_type": "smooth",
+        "index_type": "roman",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "Fossil",
+      "modelFamily": "Machine",
+      "title": "Fossil Machine Chronograph",
+      "variant": "Gunmetal",
+      "attributes": {
+        "style_type": "chrono",
+        "dial_color": "gray",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "Fossil",
+      "modelFamily": "Minimalist",
+      "title": "Fossil Minimalist",
+      "variant": "Brown",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "white",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Fossil",
+      "modelFamily": "Townsman",
+      "title": "Fossil Townsman Automatic",
+      "variant": "Skeleton",
+      "attributes": {
+        "style_type": "skeleton",
+        "dial_color": "silver",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Fossil",
+      "modelFamily": "Hybrid Smartwatch",
+      "title": "Fossil Hybrid HR",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "smartwatch",
+        "dial_color": "black",
+        "bezel_type": "smooth",
+        "index_type": "digital",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1523268755815-fe7c372a0349?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800"
+      ]
+    },
+    {
+      "brand": "Tissot",
+      "modelFamily": "PRX",
+      "title": "Tissot PRX Powermatic 80",
+      "variant": "Blue Dial",
+      "attributes": {
+        "style_type": "sport",
+        "dial_color": "blue",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "integrated"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800",
+        "https://images.unsplash.com/photo-1627910016961-ee310ef3c2e3?w=800"
+      ]
+    },
+    {
+      "brand": "Tissot",
+      "modelFamily": "Le Locle",
+      "title": "Tissot Le Locle Powermatic 80",
+      "variant": "Silver Dial",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "silver",
+        "bezel_type": "smooth",
+        "index_type": "roman",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Tissot",
+      "modelFamily": "Seastar",
+      "title": "Tissot Seastar 1000",
+      "variant": "Blue",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "blue",
+        "bezel_type": "ceramic",
+        "index_type": "baton",
+        "bracelet_type": "rubber_diver"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "Tissot",
+      "modelFamily": "Gentleman",
+      "title": "Tissot Gentleman Powermatic 80",
+      "variant": "Green Dial",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "green",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800",
+        "https://images.unsplash.com/photo-1627910016961-ee310ef3c2e3?w=800"
+      ]
+    },
+    {
+      "brand": "Tissot",
+      "modelFamily": "T-Touch",
+      "title": "Tissot T-Touch Expert Solar",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "smartwatch",
+        "dial_color": "black",
+        "bezel_type": "compass",
+        "index_type": "mixed",
+        "bracelet_type": "rubber_diver"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1523268755815-fe7c372a0349?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800"
+      ]
+    },
+    {
+      "brand": "Hamilton",
+      "modelFamily": "Khaki Field",
+      "title": "Hamilton Khaki Field Mechanical",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "field",
+        "dial_color": "black",
+        "bezel_type": "smooth",
+        "index_type": "numerals",
+        "bracelet_type": "nato"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800",
+        "https://images.unsplash.com/photo-1627910016961-ee310ef3c2e3?w=800"
+      ]
+    },
+    {
+      "brand": "Hamilton",
+      "modelFamily": "Khaki Aviation",
+      "title": "Hamilton Khaki Aviation Pilot Day Date",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "pilot",
+        "dial_color": "black",
+        "bezel_type": "smooth",
+        "index_type": "numerals",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "Hamilton",
+      "modelFamily": "Jazzmaster",
+      "title": "Hamilton Jazzmaster Open Heart",
+      "variant": "Blue",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "blue",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Hamilton",
+      "modelFamily": "Ventura",
+      "title": "Hamilton Ventura Elvis80",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "black",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Hamilton",
+      "modelFamily": "Khaki Navy",
+      "title": "Hamilton Khaki Navy Scuba",
+      "variant": "Blue",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "blue",
+        "bezel_type": "coin_edge",
+        "index_type": "baton",
+        "bracelet_type": "rubber_diver"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "TAG Heuer",
+      "modelFamily": "Formula 1",
+      "title": "TAG Heuer Formula 1",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "sport",
+        "dial_color": "black",
+        "bezel_type": "tachymeter",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "TAG Heuer",
+      "modelFamily": "Aquaracer",
+      "title": "TAG Heuer Aquaracer Professional",
+      "variant": "Blue",
+      "attributes": {
+        "style_type": "diver",
+        "dial_color": "blue",
+        "bezel_type": "ceramic",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1548171916-c8fd5a7c5bab?w=800",
+        "https://images.unsplash.com/photo-1622434641406-a158123450f9?w=800",
+        "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?w=800",
+        "https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800",
+        "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?w=800",
+        "https://images.unsplash.com/photo-1619134778706-7015b6640850?w=800",
+        "https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?w=800",
+        "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=800"
+      ]
+    },
+    {
+      "brand": "TAG Heuer",
+      "modelFamily": "Carrera",
+      "title": "TAG Heuer Carrera Chronograph",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "chrono",
+        "dial_color": "black",
+        "bezel_type": "tachymeter",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "TAG Heuer",
+      "modelFamily": "Monaco",
+      "title": "TAG Heuer Monaco",
+      "variant": "Blue Gulf",
+      "attributes": {
+        "style_type": "chrono",
+        "dial_color": "blue",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "TAG Heuer",
+      "modelFamily": "Connected",
+      "title": "TAG Heuer Connected Calibre E4",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "smartwatch",
+        "dial_color": "black",
+        "bezel_type": "smooth",
+        "index_type": "digital",
+        "bracelet_type": "rubber_diver"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1523268755815-fe7c372a0349?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800"
+      ]
+    },
+    {
+      "brand": "Movado",
+      "modelFamily": "Museum Classic",
+      "title": "Movado Museum Classic",
+      "variant": "Black Dial",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "black",
+        "bezel_type": "smooth",
+        "index_type": "dot",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Movado",
+      "modelFamily": "Bold",
+      "title": "Movado Bold",
+      "variant": "Blue",
+      "attributes": {
+        "style_type": "fashion",
+        "dial_color": "blue",
+        "bezel_type": "smooth",
+        "index_type": "dot",
+        "bracelet_type": "mesh"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Movado",
+      "modelFamily": "Museum Sport",
+      "title": "Movado Museum Sport Chronograph",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "chrono",
+        "dial_color": "black",
+        "bezel_type": "smooth",
+        "index_type": "dot",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "Movado",
+      "modelFamily": "Heritage",
+      "title": "Movado Heritage Calendoplan",
+      "variant": "White",
+      "attributes": {
+        "style_type": "dress",
+        "dial_color": "white",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "leather"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Movado",
+      "modelFamily": "SE",
+      "title": "Movado SE",
+      "variant": "Black",
+      "attributes": {
+        "style_type": "sport",
+        "dial_color": "black",
+        "bezel_type": "smooth",
+        "index_type": "dot",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800",
+        "https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800",
+        "https://images.unsplash.com/photo-1627910016961-ee310ef3c2e3?w=800"
+      ]
+    },
+    {
+      "brand": "Michael Kors",
+      "modelFamily": "Runway",
+      "title": "Michael Kors Runway Chronograph",
+      "variant": "Gold",
+      "attributes": {
+        "style_type": "fashion",
+        "dial_color": "gold",
+        "bezel_type": "smooth",
+        "index_type": "baton",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "Michael Kors",
+      "modelFamily": "Bradshaw",
+      "title": "Michael Kors Bradshaw",
+      "variant": "Rose Gold",
+      "attributes": {
+        "style_type": "fashion",
+        "dial_color": "rose_gold",
+        "bezel_type": "smooth",
+        "index_type": "roman",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800"
+      ]
+    },
+    {
+      "brand": "Michael Kors",
+      "modelFamily": "Parker",
+      "title": "Michael Kors Parker",
+      "variant": "Silver Crystal",
+      "attributes": {
+        "style_type": "fashion",
+        "dial_color": "silver",
+        "bezel_type": "crystal",
+        "index_type": "roman",
+        "bracelet_type": "womens_jewelry"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Michael Kors",
+      "modelFamily": "Lexington",
+      "title": "Michael Kors Lexington",
+      "variant": "Two-Tone",
+      "attributes": {
+        "style_type": "fashion",
+        "dial_color": "white",
+        "bezel_type": "smooth",
+        "index_type": "roman",
+        "bracelet_type": "two_tone"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?w=800",
+        "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?w=800",
+        "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800",
+        "https://images.unsplash.com/photo-1547996160-81dfa63595aa?w=800",
+        "https://images.unsplash.com/photo-1585123334904-845d60e97b29?w=800",
+        "https://images.unsplash.com/photo-1548169874-53e85f753f1e?w=800"
+      ]
+    },
+    {
+      "brand": "Michael Kors",
+      "modelFamily": "Smartwatch",
+      "title": "Michael Kors Access Gen 6",
+      "variant": "Rose Gold",
+      "attributes": {
+        "style_type": "smartwatch",
+        "dial_color": "black",
+        "bezel_type": "smooth",
+        "index_type": "digital",
+        "bracelet_type": "oyster"
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1523268755815-fe7c372a0349?w=800",
+        "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?w=800",
+        "https://images.unsplash.com/photo-1524805444758-089113d48a6d?w=800",
+        "https://images.unsplash.com/photo-1506193095-80f06cdccffd?w=800",
+        "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?w=800",
+        "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=800",
+        "https://images.unsplash.com/photo-1623998022290-a74f8cc36563?w=800",
+        "https://images.unsplash.com/photo-1618220252344-8ec99ec624b1?w=800"
+      ]
+    }
+  ]
+}

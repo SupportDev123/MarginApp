@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margin - Auction Advisor</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      width: 280px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0f0f14;
+      color: white;
+    }
+    
+    .popup-header {
+      padding: 16px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .popup-logo {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, hsl(160 70% 45%), hsl(160 60% 35%));
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 16px;
+    }
+    
+    .popup-title {
+      font-size: 16px;
+      font-weight: 600;
+    }
+    
+    .popup-content {
+      padding: 16px;
+    }
+    
+    .status-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+    
+    .status-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+    }
+    
+    .status-label {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    
+    .status-value {
+      font-weight: 500;
+    }
+    
+    .status-value.connected {
+      color: hsl(160 70% 50%);
+    }
+    
+    .status-value.disconnected {
+      color: hsl(0 60% 55%);
+    }
+    
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.1s;
+    }
+    
+    .btn:hover {
+      opacity: 0.9;
+    }
+    
+    .btn:active {
+      transform: scale(0.98);
+    }
+    
+    .btn-primary {
+      background: hsl(160 70% 45%);
+      color: white;
+    }
+    
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      margin-top: 8px;
+    }
+    
+    .auth-form {
+      display: none;
+    }
+    
+    .auth-form.active {
+      display: block;
+    }
+    
+    .input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.05);
+      color: white;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    
+    .input::placeholder {
+      color: rgba(255, 255, 255, 0.4);
+    }
+    
+    .input:focus {
+      outline: none;
+      border-color: hsl(160 70% 45%);
+    }
+    
+    .popup-footer {
+      padding: 12px 16px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      text-align: center;
+    }
+    
+    .footer-link {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 12px;
+      text-decoration: none;
+    }
+    
+    .footer-link:hover {
+      color: white;
+    }
+    
+    .logged-in {
+      display: none;
+    }
+    
+    .logged-in.active {
+      display: block;
+    }
+    
+    .logged-out {
+      display: block;
+    }
+    
+    .logged-out.hidden {
+      display: none;
+    }
+    
+    .user-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    
+    .user-avatar {
+      width: 36px;
+      height: 36px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    
+    .user-name {
+      font-weight: 500;
+      font-size: 14px;
+    }
+    
+    .user-tier {
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <div class="popup-header">
+    <div class="popup-logo">M</div>
+    <span class="popup-title">Margin</span>
+  </div>
+  
+  <div class="popup-content">
+    <!-- Logged out state -->
+    <div class="logged-out" id="logged-out">
+      <div class="status-card">
+        <div class="status-row">
+          <span class="status-label">Status</span>
+          <span class="status-value disconnected">Not connected</span>
+        </div>
+      </div>
+      
+      <p style="font-size: 13px; color: rgba(255,255,255,0.6); margin-bottom: 14px; line-height: 1.5;">
+        Connect your Margin account to get real-time flip decisions on eBay auctions.
+      </p>
+      
+      <button class="btn btn-primary" id="login-btn">Connect Account</button>
+    </div>
+    
+    <!-- Logged in state -->
+    <div class="logged-in" id="logged-in">
+      <div class="user-info">
+        <div class="user-avatar" id="user-avatar">?</div>
+        <div>
+          <div class="user-name" id="user-name">Loading...</div>
+          <div class="user-tier" id="user-tier">Free</div>
+        </div>
+      </div>
+      
+      <div class="status-card">
+        <div class="status-row">
+          <span class="status-label">Status</span>
+          <span class="status-value connected">Connected</span>
+        </div>
+      </div>
+      
+      <button class="btn btn-secondary" id="logout-btn">Disconnect</button>
+    </div>
+  </div>
+  
+  <div class="popup-footer">
+    <a href="https://workspace-tsimpson923.replit.app" target="_blank" class="footer-link">Open Margin App</a>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

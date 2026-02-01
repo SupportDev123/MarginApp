@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Money Green Dark Theme */
+  --background: 140 12% 6%;             /* Near black with green tint */
+  --foreground: 0 0% 98%;               /* Pure white text */
+  
+  --card: 140 10% 10%;                  /* Dark elevated surface */
+  --card-foreground: 0 0% 98%;
+  
+  --popover: 140 10% 12%;
+  --popover-foreground: 0 0% 98%;
+  
+  --primary: 142 70% 45%;               /* Money Green */
+  --primary-foreground: 0 0% 100%;
+  
+  --secondary: 140 8% 15%;              /* Subtle elevation */
+  --secondary-foreground: 0 0% 90%;
+  
+  --muted: 140 6% 20%;
+  --muted-foreground: 0 0% 65%;         /* High contrast muted text */
+  
+  --accent: 142 60% 40%;
+  --accent-foreground: 0 0% 100%;
+  
+  --destructive: 0 72% 51%;             /* Vivid red */
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 140 8% 20%;
+  --input: 140 8% 15%;
+  --ring: 142 70% 45%;
+  
+  --radius: 0.625rem;
+
+  /* Result Colors - Exciting & Instantly Recognizable */
+  --result-flip: 142 70% 45%;           /* Money Green - Profit */
+  --result-skip: 0 50% 42%;             /* Softened Red - Calm, Professional */
+  --result-risky: 38 92% 50%;           /* Amber - Caution */
+  --result-hold: 0 0% 45%;              /* Neutral Gray */
+  
+  /* Glow Colors */
+  --glow-flip: 142 72% 50%;
+  --glow-skip: 0 70% 55%;
+  --glow-risky: 38 90% 55%;
+  
+  /* Extended Palette */
+  --margin-green: 142 70% 45%;
+  --margin-green-dark: 142 65% 35%;
+  --margin-green-glow: 142 72% 50%;
+  
+  /* Mode-Specific Palettes */
+  /* Live Capture - Purple/Violet */
+  --live-capture-primary: 263 70% 50%;       /* #7C3AED */
+  --live-capture-secondary: 263 80% 70%;     /* #A78BFA */
+  --live-capture-dark: 263 70% 27%;          /* #4C1D95 */
+  
+  /* Yard Sale - Amber/Orange */
+  --yard-sale-primary: 38 92% 50%;           /* #F59E0B */
+  --yard-sale-secondary: 43 96% 56%;         /* #FBBF24 */
+  --yard-sale-dark: 28 73% 26%;              /* #92400E */
+}
+
+.dark {
+  /* Money Green Dark Theme */
+  --background: 140 12% 6%;
+  --foreground: 0 0% 98%;
+  --card: 140 10% 10%;
+  --card-foreground: 0 0% 98%;
+  --popover: 140 10% 12%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 142 70% 45%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 140 8% 15%;
+  --secondary-foreground: 0 0% 90%;
+  --muted: 140 6% 20%;
+  --muted-foreground: 0 0% 65%;
+  --accent: 142 60% 40%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 140 8% 20%;
+  --input: 140 8% 15%;
+  --ring: 142 70% 45%;
+}
+
+.light {
+  /* Clean Light Theme - Money Green */
+  --background: 0 0% 100%;
+  --foreground: 140 12% 10%;
+  --card: 140 5% 98%;
+  --card-foreground: 140 12% 10%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 140 12% 10%;
+  --primary: 142 70% 40%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 140 5% 94%;
+  --secondary-foreground: 140 12% 15%;
+  --muted: 140 5% 90%;
+  --muted-foreground: 140 5% 40%;
+  --accent: 142 50% 92%;
+  --accent-foreground: 142 70% 30%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 140 5% 88%;
+  --input: 140 5% 88%;
+  --ring: 142 70% 40%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply bg-background;
+  }
+  body {
+    @apply bg-background text-foreground antialiased font-sans;
+    overscroll-behavior-y: none;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+/* ============================================
+   RESULT STATUS UTILITIES - Instantly Recognizable
+   ============================================ */
+
+/* FLIP - Vibrant teal-green with exciting glow */
+.result-flip {
+  color: hsl(var(--result-flip));
+}
+.result-flip-bg {
+  background: linear-gradient(135deg, hsl(160 84% 39% / 0.15), hsl(160 84% 39% / 0.05));
+  border-color: hsl(160 84% 39% / 0.4);
+}
+.result-flip-badge {
+  background: hsl(160 70% 38%);
+  color: white;
+  font-weight: 600;
+  animation: flip-glow-settle 300ms ease-out forwards;
+}
+@keyframes flip-glow-settle {
+  0% {
+    box-shadow: 0 0 20px hsl(160 80% 50% / 0.5);
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+.result-flip-glow {
+  box-shadow: 0 0 30px hsl(160 85% 45% / 0.4), 0 4px 20px hsl(160 85% 45% / 0.25);
+}
+
+/* SKIP - Calm, authoritative red (not punitive) */
+.result-skip {
+  color: hsl(var(--result-skip));
+}
+.result-skip-bg {
+  background: linear-gradient(135deg, hsl(0 45% 35% / 0.15), hsl(0 45% 35% / 0.06));
+  border-color: hsl(0 45% 40% / 0.30);
+}
+.result-skip-badge {
+  background: hsl(0 40% 32%);
+  color: hsl(0 0% 92%);
+  font-weight: 600;
+  /* Intentionally flat, softened - professional, not emotional */
+}
+
+/* RISKY - Orange warning */
+.result-risky {
+  color: hsl(var(--result-risky));
+}
+.result-risky-bg {
+  background: linear-gradient(135deg, hsl(25 95% 53% / 0.12), hsl(25 95% 53% / 0.04));
+  border-color: hsl(25 95% 53% / 0.35);
+}
+.result-risky-badge {
+  background: hsl(38 85% 48%);
+  color: white;
+  font-weight: 600;
+  /* Amber accent, flat - no glow */
+}
+
+/* HOLD - Neutral gray */
+.result-hold {
+  color: hsl(var(--result-hold));
+}
+.result-hold-bg {
+  background: linear-gradient(135deg, hsl(0 0% 45% / 0.1), hsl(0 0% 45% / 0.03));
+  border-color: hsl(0 0% 45% / 0.3);
+}
+.result-hold-badge {
+  background: hsl(0 0% 42%);
+  color: white;
+  font-weight: 600;
+  /* Neutral gray, flat - no effects */
+}
+
+/* Legacy utility classes for compatibility */
+.text-buy { color: hsl(var(--result-flip)); }
+.bg-buy { background-color: hsl(var(--result-flip)); }
+.bg-buy-soft { background-color: hsl(var(--result-flip) / 0.15); }
+.border-buy { border-color: hsl(var(--result-flip)); }
+
+.text-risky { color: hsl(var(--result-risky)); }
+.bg-risky { background-color: hsl(var(--result-risky)); }
+.bg-risky-soft { background-color: hsl(var(--result-risky) / 0.15); }
+.border-risky { border-color: hsl(var(--result-risky)); }
+
+.text-pass { color: hsl(var(--result-skip)); }
+.bg-pass { background-color: hsl(var(--result-skip)); }
+.bg-pass-soft { background-color: hsl(var(--result-skip) / 0.15); }
+.border-pass { border-color: hsl(var(--result-skip)); }
+
+/* ============================================
+   MICRO-INTERACTIONS
+   ============================================ */
+
+/* Result reveal animation - subtle upward fade */
+@keyframes result-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.result-reveal {
+  animation: result-reveal 180ms ease-out forwards;
+}
+
+/* Button press feedback */
+.btn-press {
+  transition: transform 0.1s ease, box-shadow 0.15s ease;
+}
+.btn-press:active {
+  transform: scale(0.97);
+}
+
+/* Primary action button with glow - Teal theme */
+.btn-primary-glow {
+  background: linear-gradient(135deg, hsl(160 84% 42%), hsl(160 80% 32%));
+  box-shadow: 0 4px 14px hsl(160 85% 45% / 0.4);
+  transition: all 0.2s ease;
+}
+.btn-primary-glow:hover {
+  box-shadow: 0 6px 20px hsl(160 85% 45% / 0.5);
+  transform: translateY(-1px);
+}
+.btn-primary-glow:active {
+  transform: scale(0.98) translateY(0);
+  box-shadow: 0 2px 10px hsl(160 85% 45% / 0.3);
+}
+
+/* Card hover lift */
+.card-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px hsl(0 0% 0% / 0.3);
+}
+
+/* Subtle scale on tap */
+.tap-scale {
+  transition: transform 0.1s ease;
+}
+.tap-scale:active {
+  transform: scale(0.98);
+}
+
+/* Score number emphasis - Teal for profit */
+.score-flip {
+  color: hsl(160 84% 45%);
+  text-shadow: 0 0 20px hsl(160 85% 45% / 0.5);
+}
+.score-skip {
+  color: hsl(0 72% 55%);
+}
+.score-risky {
+  color: hsl(38 92% 55%);
+}
+.score-hold {
+  color: hsl(0 0% 55%);
+}
+
+/* ============================================
+   ENHANCED TYPOGRAPHY
+   ============================================ */
+
+/* High contrast headings */
+.heading-primary {
+  @apply text-foreground font-bold tracking-tight;
+}
+
+/* Muted but readable secondary text */
+.text-secondary-readable {
+  color: hsl(0 0% 70%);
+}
+
+/* Profit/Loss display */
+.profit-positive {
+  color: hsl(153 55% 55%);
+  font-weight: 700;
+}
+.profit-negative {
+  color: hsl(0 72% 55%);
+  font-weight: 700;
+}
+.profit-neutral {
+  color: hsl(0 0% 60%);
+  font-weight: 600;
+}
+
+/* ============================================
+   MOBILE OPTIMIZATION
+   ============================================ */
+
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Tighter mobile spacing */
+@media (max-width: 640px) {
+  .mobile-tight {
+    @apply p-3;
+  }
+  .mobile-gap-tight {
+    @apply gap-2;
+  }
+}
+
+/* ============================================
+   SPECIAL EFFECTS
+   ============================================ */
+
+/* Gradient text for emphasis */
+.gradient-text-profit {
+  background: linear-gradient(135deg, hsl(153 55% 50%), hsl(153 60% 65%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtle border glow on focus */
+.focus-glow:focus {
+  box-shadow: 0 0 0 2px hsl(var(--background)), 0 0 0 4px hsl(153 55% 45% / 0.5);
+}
+
+/* Success flash animation */
+@keyframes success-flash {
+  0% { background-color: hsl(153 55% 45% / 0.3); }
+  100% { background-color: transparent; }
+}
+.animate-success-flash {
+  animation: success-flash 0.5s ease-out;
+}
+
+/* Shimmer loading effect */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer {
+  background: linear-gradient(90deg, 
+    hsl(var(--muted)) 0%, 
+    hsl(var(--muted) / 0.5) 50%, 
+    hsl(var(--muted)) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Win Card gradient animation */
+@keyframes gradient-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Confetti celebration animation */
+@keyframes confetti-fall {
+  0% { transform: translateY(-100vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+/* Pulse glow animation for profit display */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(34, 197, 94, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(34, 197, 94, 0.6); }
+}
+
+/* ========== MarginPulse Animations ========== */
+
+/* Heartbeat pulse for scan button */
+@keyframes margin-pulse {
+  0%, 100% { 
+    transform: scale(1);
+    box-shadow: 0 0 0 0 hsl(var(--primary) / 0.7);
+  }
+  50% { 
+    transform: scale(1.05);
+    box-shadow: 0 0 0 12px hsl(var(--primary) / 0);
+  }
+}
+
+.margin-pulse {
+  animation: margin-pulse 1.5s ease-in-out infinite;
+}
+
+/* Radiating rings on detection */
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.pulse-ring {
+  position: absolute;
+  border: 2px solid hsl(var(--primary));
+  border-radius: 50%;
+  animation: pulse-ring 1.5s ease-out infinite;
+}
+
+.pulse-ring-delayed {
+  animation-delay: 0.5s;
+}
+
+.pulse-ring-delayed-2 {
+  animation-delay: 1s;
+}
+
+/* Scanning beam animation */
+@keyframes scan-beam {
+  0%, 100% {
+    top: 0%;
+  }
+  50% {
+    top: calc(100% - 4px);
+  }
+}
+
+.scan-beam-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.scan-beam {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, hsl(var(--primary)), hsl(var(--primary)), transparent);
+  box-shadow: 0 0 20px hsl(var(--primary) / 0.8), 0 0 40px hsl(var(--primary) / 0.5);
+  animation: scan-beam 1.5s ease-in-out infinite;
+}
+
+/* Profit number pulse on flip */
+@keyframes profit-pulse {
+  0%, 100% { 
+    transform: scale(1);
+    text-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+  }
+  50% { 
+    transform: scale(1.08);
+    text-shadow: 0 0 20px rgba(34, 197, 94, 0.8), 0 0 40px rgba(34, 197, 94, 0.4);
+  }
+}
+
+.profit-pulse {
+  animation: profit-pulse 1s ease-in-out infinite;
+}
+
+/* Scanning state pulse */
+@keyframes scan-pulse {
+  0%, 100% { 
+    opacity: 0.6;
+    border-color: hsl(var(--primary) / 0.5);
+  }
+  50% { 
+    opacity: 1;
+    border-color: hsl(var(--primary));
+  }
+}
+
+.scan-pulse {
+  animation: scan-pulse 1s ease-in-out infinite;
+}
+
+/* MarginPulse logo pulse */
+@keyframes logo-pulse {
+  0%, 100% { 
+    filter: drop-shadow(0 0 4px hsl(var(--primary) / 0.5));
+  }
+  50% { 
+    filter: drop-shadow(0 0 12px hsl(var(--primary) / 0.8));
+  }
+}
+
+.logo-pulse {
+  animation: logo-pulse 2s ease-in-out infinite;
+}
+
+/* Text pulse for "Pulse" word - heartbeat beat */
+@keyframes text-pulse {
+  0%, 100% { 
+    transform: scale(1);
+    opacity: 1;
+  }
+  15% { 
+    transform: scale(1.12);
+    opacity: 1;
+  }
+  30% { 
+    transform: scale(1);
+    opacity: 1;
+  }
+  45% { 
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  60%, 100% { 
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.text-pulse {
+  display: inline-block;
+  animation: text-pulse 1.5s ease-in-out infinite;
+  color: hsl(var(--primary));
+  font-weight: inherit;
+}
+
+/* Scan token glow for remaining scans */
+.scan-token-glow {
+  box-shadow: 0 0 8px hsl(var(--primary) / 0.5), 0 0 16px hsl(var(--primary) / 0.25);
+}
+
+/* Corner bracket pulse for scanning frame */
+@keyframes bracket-pulse {
+  0%, 100% { 
+    opacity: 0.7;
+    filter: drop-shadow(0 0 2px hsl(var(--primary) / 0.3));
+  }
+  50% { 
+    opacity: 1;
+    filter: drop-shadow(0 0 8px hsl(var(--primary) / 0.8));
+  }
+}
+
+.bracket-pulse {
+  animation: bracket-pulse 1.2s ease-in-out infinite;
+}

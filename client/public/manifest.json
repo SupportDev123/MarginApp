@@ -1,0 +1,138 @@
+{
+  "name": "Margin - Reseller Decision Engine",
+  "short_name": "Margin",
+  "description": "A Smart Decision engine for buyers and resellers.",
+  "lang": "en-US",
+  "dir": "ltr",
+  "start_url": "/",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "standalone",
+    "minimal-ui"
+  ],
+  "background_color": "#000000",
+  "theme_color": "#ef4444",
+  "orientation": "portrait",
+  "scope": "/",
+  "id": "com.margin.app",
+  "iarc_rating_id": "e84b072d-71b3-4d3e-86ae-31a8ce4e53b7",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-1024.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": [
+    "shopping",
+    "finance",
+    "utilities"
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/goals.png",
+      "sizes": "357x767",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Daily profit goals and achievements"
+    },
+    {
+      "src": "/screenshots/inventory.png",
+      "sizes": "381x775",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Track your inventory and profits"
+    },
+    {
+      "src": "/screenshots/yard-sale.png",
+      "sizes": "380x775",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Yard Sale Mode for quick scanning"
+    },
+    {
+      "src": "/screenshots/trip-summary.png",
+      "sizes": "388x780",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Trip summary with stats"
+    },
+    {
+      "src": "/screenshots/wide-dashboard.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Desktop dashboard view"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "shortcuts": [
+    {
+      "name": "Scan Item",
+      "short_name": "Scan",
+      "description": "Scan a new item for profit analysis",
+      "url": "/analyze",
+      "icons": [
+        {
+          "src": "/icon-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "View Inventory",
+      "short_name": "Inventory",
+      "description": "View your inventory",
+      "url": "/inventory",
+      "icons": [
+        {
+          "src": "/icon-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Track Expenses",
+      "short_name": "Expenses",
+      "description": "Track your business expenses",
+      "url": "/expenses",
+      "icons": [
+        {
+          "src": "/icon-96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "share_target": {
+    "action": "/analyze",
+    "method": "GET",
+    "params": {
+      "url": "url",
+      "text": "text",
+      "title": "title"
+    }
+  },
+  "handle_links": "preferred",
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  }
+}
