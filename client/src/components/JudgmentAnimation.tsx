@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 import { Check, X, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
-import marginMIcon from "../assets/image_1768676379919.png";
 
 type JudgmentResult = {
   decision: 'flip' | 'skip' | 'risky';
@@ -446,23 +445,6 @@ export function JudgmentAnimation({
           ease: "easeOut" 
         }}
       >
-        <motion.img
-          src={marginMIcon}
-          alt="M"
-          className="h-16 w-auto"
-          style={{
-            maskImage: 'radial-gradient(ellipse 70% 70% at center, black 30%, transparent 75%)',
-            WebkitMaskImage: 'radial-gradient(ellipse 70% 70% at center, black 30%, transparent 75%)'
-          }}
-          initial={{ opacity: 0, scale: 0.5, rotate: -10 }}
-          animate={{ opacity: 1, scale: 1, rotate: 0 }}
-          transition={{ 
-            delay: 0.06,
-            duration: 0.08,
-            ease: "easeOut"
-          }}
-        />
-
         <motion.div
           className="flex items-center gap-2"
           initial={{ opacity: 0, y: 5 }}
@@ -509,15 +491,6 @@ export function JudgmentBadge({ verdict }: { verdict: 'flip' | 'skip' }) {
       c.bg,
       c.text
     )} data-testid="judgment-badge">
-      <img 
-        src={marginMIcon} 
-        alt="" 
-        className="h-7 w-auto"
-        style={{
-          maskImage: 'radial-gradient(ellipse 65% 65% at center, black 25%, transparent 70%)',
-          WebkitMaskImage: 'radial-gradient(ellipse 65% 65% at center, black 25%, transparent 70%)'
-        }}
-      />
       {c.label}
       <Icon className="w-4 h-4" strokeWidth={3} />
     </span>
