@@ -1,4 +1,5 @@
 import { Switch, Route, Redirect } from "wouter";
+import { lazy, Suspense } from "react";
 import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
@@ -11,40 +12,44 @@ import { InstallPrompt } from "@/components/InstallPrompt";
 import { OfflineIndicator } from "@/components/OfflineIndicator";
 import { WelcomeDialog } from "@/components/WelcomeDialog";
 import { FeedbackGate } from "@/components/FeedbackGate";
+import { RouteLoading } from "@/components/RouteLoading";
 
+// Critical pages - loaded immediately
 import AuthPage from "@/pages/AuthPage";
-import ScansPage from "@/pages/ScansPage";
-import AnalyzePage from "@/pages/AnalyzePage";
-import BatchScanPage from "@/pages/BatchScanPage";
-import YardSaleMode from "@/pages/YardSaleMode";
-import ItemDetails from "@/pages/ItemDetails";
-import InventoryPage from "@/pages/InventoryPage";
-import SettingsPage from "@/pages/SettingsPage";
-import CookbooksPage from "@/pages/CookbooksPage";
-import ResetPasswordPage from "@/pages/ResetPasswordPage";
-import PartnerPage from "@/pages/PartnerPage";
-import StatsPage from "@/pages/StatsPage";
-import AnalyticsPage from "@/pages/AnalyticsPage";
-import BrandLibraryPage from "@/pages/BrandLibraryPage";
-import BrandDetailPage from "@/pages/BrandDetailPage";
-import StreamOverlay from "@/pages/StreamOverlay";
-import LiveCapture from "@/pages/LiveCapture";
-import LibraryAdminPage from "@/pages/LibraryAdminPage";
-import BulkImageUpload from "@/pages/BulkImageUpload";
-import ARProfitOverlay from "@/pages/ARProfitOverlay";
-import ProfitDashboard from "@/pages/ProfitDashboard";
-import OpenMarketSearch from "@/pages/OpenMarketSearch";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsOfService from "@/pages/TermsOfService";
 import SupportPage from "@/pages/SupportPage";
-import ExportPage from "@/pages/ExportPage";
-import ExpensesPage from "@/pages/ExpensesPage";
-import AppStoreChecklist from "@/pages/AppStoreChecklist";
-import CardGradingPage from "@/pages/CardGradingPage";
-import SportsMemorabiliaPage from "@/pages/SportsMemorabiliaPage";
 import NotFound from "@/pages/not-found";
 
-// Protected Route Wrapper
+// Lazy-loaded pages - split into separate chunks
+const ScansPage = lazy(() => import("@/pages/ScansPage"));
+const AnalyzePage = lazy(() => import("@/pages/AnalyzePage"));
+const BatchScanPage = lazy(() => import("@/pages/BatchScanPage"));
+const YardSaleMode = lazy(() => import("@/pages/YardSaleMode"));
+const ItemDetails = lazy(() => import("@/pages/ItemDetails"));
+const InventoryPage = lazy(() => import("@/pages/InventoryPage"));
+const SettingsPage = lazy(() => import("@/pages/SettingsPage"));
+const CookbooksPage = lazy(() => import("@/pages/CookbooksPage"));
+const ResetPasswordPage = lazy(() => import("@/pages/ResetPasswordPage"));
+const PartnerPage = lazy(() => import("@/pages/PartnerPage"));
+const StatsPage = lazy(() => import("@/pages/StatsPage"));
+const AnalyticsPage = lazy(() => import("@/pages/AnalyticsPage"));
+const BrandLibraryPage = lazy(() => import("@/pages/BrandLibraryPage"));
+const BrandDetailPage = lazy(() => import("@/pages/BrandDetailPage"));
+const StreamOverlay = lazy(() => import("@/pages/StreamOverlay"));
+const LiveCapture = lazy(() => import("@/pages/LiveCapture"));
+const LibraryAdminPage = lazy(() => import("@/pages/LibraryAdminPage"));
+const BulkImageUpload = lazy(() => import("@/pages/BulkImageUpload"));
+const ARProfitOverlay = lazy(() => import("@/pages/ARProfitOverlay"));
+const ProfitDashboard = lazy(() => import("@/pages/ProfitDashboard"));
+const OpenMarketSearch = lazy(() => import("@/pages/OpenMarketSearch"));
+const ExportPage = lazy(() => import("@/pages/ExportPage"));
+const ExpensesPage = lazy(() => import("@/pages/ExpensesPage"));
+const AppStoreChecklist = lazy(() => import("@/pages/AppStoreChecklist"));
+const CardGradingPage = lazy(() => import("@/pages/CardGradingPage"));
+const SportsMemorabiliaPage = lazy(() => import("@/pages/SportsMemorabiliaPage"));
+
+// Protected Route Wrapper - wraps lazy components with Suspense + auth checks
 function ProtectedRoute({ component: Component }: { component: React.ComponentType }) {
   const { user, isLoading } = useAuth();
 
@@ -60,14 +65,22 @@ function ProtectedRoute({ component: Component }: { component: React.ComponentTy
     return <AuthPage />;
   }
 
-  return <Component />;
+  return (
+    <Suspense fallback={<RouteLoading />}>
+      <Component />
+    </Suspense>
+  );
 }
 
 function Router() {
   return (
     <Switch>
       <Route path="/auth" component={AuthPage} />
-      <Route path="/reset-password" component={ResetPasswordPage} />
+      <Route path="/reset-password">
+        <Suspense fallback={<RouteLoading />}>
+          <ResetPasswordPage />
+        </Suspense>
+      </Route>
 
       {/* Deep Scan - full URL/camera analysis with detailed comps */}
       <Route path="/deep-scan">
@@ -145,7 +158,11 @@ function Router() {
 
 
       {/* Stream Overlay - standalone page for OBS/streaming */}
-      <Route path="/stream-overlay" component={StreamOverlay} />
+      <Route path="/stream-overlay">
+        <Suspense fallback={<RouteLoading />}>
+          <StreamOverlay />
+        </Suspense>
+      </Route>
 
       {/* Live Capture - HIDDEN until feature is production-ready
       <Route path="/live-capture" component={LiveCapture} />

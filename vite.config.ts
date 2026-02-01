@@ -37,6 +37,56 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    // Code splitting configuration for optimal chunk sizes
+    rollupOptions: {
+      output: {
+        manualChunks: (id) => {
+          // Keep heavy pages as separate lazy chunks
+          if (id.includes("node_modules")) {
+            if (
+              id.includes("@radix-ui/react-dialog") ||
+              id.includes("@radix-ui/react-select") ||
+              id.includes("@radix-ui/react-popover")
+            ) {
+              return "vendor-ui";
+            }
+            if (id.includes("@radix-ui")) {
+              return "vendor-ui";
+            }
+            if (id.includes("@hookform") || id.includes("react-hook-form")) {
+              return "vendor-form";
+            }
+            if (id.includes("@tanstack/react-query")) {
+              return "vendor-query";
+            }
+            if (
+              id.includes("date-fns") ||
+              id.includes("lucide-react") ||
+              id.includes("clsx") ||
+              id.includes("tailwind-merge")
+            ) {
+              return "vendor-utils";
+            }
+            if (
+              id.includes("wouter") ||
+              id.includes("framer-motion") ||
+              id.includes("embla-carousel") ||
+              id.includes("cmdk") ||
+              id.includes("react-hook-form")
+            ) {
+              return "vendor-other";
+            }
+            if (id.includes("react") && !id.includes("@radix")) {
+              return "vendor-react";
+            }
+          }
+        },
+      },
+    },
+    // Warn when chunks exceed 500KB
+    chunkSizeWarningLimit: 500,
+    // Use default minify (esbuild) which is faster and works without extra dependencies
+    minify: "esbuild",
   },
   server: {
     fs: {
