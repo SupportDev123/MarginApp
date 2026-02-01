@@ -150,9 +150,18 @@ async function downloadAndValidateImage(url: string): Promise<{ buffer: Buffer; 
 
 async function searchSerpAPIImages(query: string, apiKey: string): Promise<SerpImageResult[]> {
   try {
-    const searchUrl = `https://serpapi.com/search.json?engine=google_images&q=${encodeURIComponent(query)}&num=30&safe=active&api_key=${apiKey}`;
-    
-    const response = await fetch(searchUrl, {
+    const params = new URLSearchParams({
+      engine: 'google_images',
+      q: query,
+      num: '30',
+      safe: 'active',
+    });
+
+    const response = await fetch('https://serpapi.com/search.json?' + params.toString(), {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+      },
       signal: AbortSignal.timeout(30000),
     });
 

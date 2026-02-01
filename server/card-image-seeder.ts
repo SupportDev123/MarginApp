@@ -398,9 +398,19 @@ async function searchSerpApiCards(query: string): Promise<{ images: SerpApiImage
     }
 
     const searchQuery = `${query} trading card`;
-    const url = `https://serpapi.com/search.json?engine=google_images&q=${encodeURIComponent(searchQuery)}&num=20&api_key=${serpApiKey}`;
+    const params = new URLSearchParams({
+      engine: 'google_images',
+      q: searchQuery,
+      num: '20',
+    });
+    const url = `https://serpapi.com/search.json?${params.toString()}`;
 
-    const response = await fetch(url);
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${serpApiKey}`,
+      },
+    });
 
     if (response.status === 429 || response.status === 503) {
       console.log(`    Rate limited (${response.status}), waiting ${DELAY_ON_RATE_LIMIT_MS / 1000}s...`);

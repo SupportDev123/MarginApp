@@ -18,6 +18,21 @@ import { runSerpApiWatchSeeder as runWatchImageSeeder } from './serpapi-watch-se
 import { preWarmOpenAIClient } from './visual-matching';
 import { startPriceAlertChecker } from './price-alert-checker';
 
+// Global error handlers for production stability
+process.on('unhandledRejection', (reason, promise) => {
+  console.error('[FATAL] Unhandled Promise Rejection:', reason);
+  console.error('[FATAL] Promise:', promise);
+});
+
+process.on('uncaughtException', (error) => {
+  console.error('[FATAL] Uncaught Exception:', error);
+  // Gracefully shutdown on critical errors
+  if (process.env.NODE_ENV === 'production') {
+    console.error('[FATAL] Shutting down due to uncaught exception');
+    process.exit(1);
+  }
+});
+
 // SPEED OPTIMIZATION: Pre-warm OpenAI client to avoid cold-start delay on first scan
 preWarmOpenAIClient();
 
