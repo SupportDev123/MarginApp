@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { Check, X, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
-import marginMIcon from "@assets/image_1768676379919.png";
+import marginMIcon from "../assets/image_1768676379919.png";
 
 type JudgmentResult = {
   decision: 'flip' | 'skip' | 'risky';
