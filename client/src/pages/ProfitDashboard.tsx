@@ -116,7 +116,7 @@ export default function ProfitDashboard() {
         <div className="bg-background/95 backdrop-blur-md border-b border-border/50 px-4 py-3">
           <div className="flex items-center justify-between">
             <MarginLogoFull height={32} />
-            {stats && (
+            {stats && stats.currentStreak > 0 && (
               <div className="flex items-center gap-2">
                 <Flame className="w-5 h-5 text-orange-500" />
                 <span className="font-bold">{stats.currentStreak}</span>
@@ -226,13 +226,37 @@ export default function ProfitDashboard() {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="text-center py-4"
+                className="text-center py-4 space-y-3"
               >
-                <p className="text-muted-foreground mb-2">No goal set for today</p>
-                <p className="text-sm text-muted-foreground">Set a profit target to track your progress!</p>
+                <div>
+                  <p className="text-muted-foreground mb-1 font-medium">No goal set for today</p>
+                  <p className="text-sm text-muted-foreground">Set a daily target to stay motivated!</p>
+                </div>
+                <Button 
+                  onClick={() => setShowGoalInput(true)}
+                  variant="outline"
+                  size="sm"
+                  className="w-full"
+                  data-testid="button-set-goal-empty"
+                >
+                  <Plus className="w-4 h-4 mr-2" />
+                  Set Daily Goal
+                </Button>
               </motion.div>
             )}
           </AnimatePresence>
+        </Card>
+
+        {/* Scan Now Quick Action */}
+        <Link href="/deep-scan?mode=live">
+          <Button 
+            className="w-full h-12 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-white font-semibold text-base"
+            data-testid="button-scan-now-dashboard"
+          >
+            <Plus className="w-5 h-5 mr-2" />
+            Scan Now
+          </Button>
+        </Link>
         </Card>
 
         <div className="grid grid-cols-2 gap-3">

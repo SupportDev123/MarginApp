@@ -6860,7 +6860,8 @@ Return a JSON object with EXACTLY these fields:
         const netProfitDisplay = actualNetProfit >= 0 ? `~$${Math.round(actualNetProfit)}` : `-$${Math.abs(Math.round(actualNetProfit))}`;
         consistentExplanation = `Recent sold comps average $${Math.round(actualAvgPrice)}, leaving ${netProfitDisplay} net profit after fees.`;
       } else {
-        consistentExplanation = "No real sold comps found. Use Research Mode to manually select comparables.";
+        // Better messaging when insufficient data for decision
+        consistentExplanation = "Insufficient market data to assess profitability. Use Research Mode to manually enter sold comparables for an accurate verdict.";
       }
       
       // Calculate expiry date - admins and pro users never expire

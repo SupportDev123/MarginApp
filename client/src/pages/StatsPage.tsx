@@ -203,15 +203,17 @@ export default function StatsPage() {
 
             {/* Activity Stats */}
             <div className="grid grid-cols-4 gap-2">
-              <Card className="p-3 text-center">
-                <div className="flex items-center justify-center gap-1 mb-1">
-                  <Flame className={`w-4 h-4 ${stats.streak > 0 ? 'text-orange-500' : 'text-muted-foreground'}`} />
-                </div>
-                <div className={`text-lg font-bold ${stats.streak > 0 ? 'text-orange-500' : ''}`}>
-                  {stats.streak}
-                </div>
-                <div className="text-xs text-muted-foreground">Day Streak</div>
-              </Card>
+              {stats.streak > 0 && (
+                <Card className="p-3 text-center">
+                  <div className="flex items-center justify-center gap-1 mb-1">
+                    <Flame className={`w-4 h-4 ${stats.streak > 0 ? 'text-orange-500' : 'text-muted-foreground'}`} />
+                  </div>
+                  <div className={`text-lg font-bold ${stats.streak > 0 ? 'text-orange-500' : ''}`}>
+                    {stats.streak}
+                  </div>
+                  <div className="text-xs text-muted-foreground">Day Streak</div>
+                </Card>
+              )}
               <Card className="p-3 text-center">
                 <div className="text-lg font-bold">{stats.totalScans}</div>
                 <div className="text-xs text-muted-foreground">Scans</div>

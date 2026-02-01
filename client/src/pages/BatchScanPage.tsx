@@ -839,7 +839,7 @@ export default function BatchScanPage() {
             {/* Processing indicator */}
             {isProcessing && (
               <Card className="p-4 mb-4 border-primary/50 bg-primary/5">
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 mb-3">
                   <Loader2 className="w-6 h-6 animate-spin text-primary" />
                   <div>
                     <p className="font-medium">Processing batch...</p>
@@ -848,18 +848,42 @@ export default function BatchScanPage() {
                     </p>
                   </div>
                 </div>
+                
+                {/* Mini progress bar */}
+                <div className="w-full h-1.5 bg-muted rounded-full overflow-hidden">
+                  <motion.div 
+                    initial={{ width: 0 }}
+                    animate={{ width: `${progress}%` }}
+                    transition={{ duration: 0.3 }}
+                    className="h-full bg-primary"
+                  />
+                </div>
               </Card>
             )}
 
-            {/* Progress bar */}
+            {/* Progress details */}
             <div className="mb-4">
               <div className="flex items-center justify-between mb-2">
                 <span className="text-sm font-medium">Progress</span>
                 <span className="text-sm text-muted-foreground">
-                  {completedCount + failedCount}/{items.length}
+                  {completedCount + failedCount}/{items.length} scanned
                 </span>
               </div>
-              <Progress value={progress} className="h-2" />
+              <Progress value={progress} className="h-3" />
+              
+              {/* Status breakdown */}
+              {isProcessing && (
+                <div className="flex gap-2 mt-2 text-xs text-muted-foreground">
+                  <div className="flex items-center gap-1">
+                    <CheckCircle className="w-3 h-3 text-green-500" />
+                    <span>{completedCount} flipped</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <ThumbsDown className="w-3 h-3 text-red-500" />
+                    <span>{failedCount} skipped</span>
+                  </div>
+                </div>
+              )}
             </div>
 
             {/* Queue items - swipe left to skip, right to flip */}

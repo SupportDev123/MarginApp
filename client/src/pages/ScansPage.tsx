@@ -243,10 +243,31 @@ export default function Dashboard() {
           {/* Filter tabs */}
           <div className="px-4 pb-3">
             <Tabs value={decisionFilter} onValueChange={(v) => setDecisionFilter(v as DecisionFilter)}>
-              <TabsList className="w-full">
-                <TabsTrigger value="flip" className="flex-1" data-testid="tab-flip">Flip IT!</TabsTrigger>
-                <TabsTrigger value="skip" className="flex-1" data-testid="tab-skip">Skip IT!</TabsTrigger>
-                <TabsTrigger value="all" className="flex-1" data-testid="tab-all">All</TabsTrigger>
+              <TabsList className="w-full bg-muted/50">
+                <TabsTrigger 
+                  value="flip" 
+                  className="flex-1 data-[state=active]:bg-green-500/20 data-[state=active]:text-green-400" 
+                  data-testid="tab-flip"
+                >
+                  <TrendingUp className="w-3.5 h-3.5 mr-1.5" />
+                  <span>Flip IT!</span>
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="skip" 
+                  className="flex-1 data-[state=active]:bg-red-500/20 data-[state=active]:text-red-400" 
+                  data-testid="tab-skip"
+                >
+                  <X className="w-3.5 h-3.5 mr-1.5" />
+                  <span>Skip IT!</span>
+                </TabsTrigger>
+                <TabsTrigger 
+                  value="all" 
+                  className="flex-1" 
+                  data-testid="tab-all"
+                >
+                  <ShoppingCart className="w-3.5 h-3.5 mr-1.5" />
+                  <span>All</span>
+                </TabsTrigger>
               </TabsList>
             </Tabs>
           </div>

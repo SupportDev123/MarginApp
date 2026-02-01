@@ -496,18 +496,18 @@ export default function SettingsPage() {
 
           {/* Partner Program Section - Show for ALL users */}
           {affiliateStats && (
-            <Card className="p-4">
+            <Card className="p-4 bg-gradient-to-br from-primary/5 via-background to-background">
               <h3 className="text-xs font-bold text-muted-foreground uppercase tracking-wider mb-3">
                 <div className="flex items-center gap-2">
-                  <Share2 className="w-4 h-4" />
+                  <Share2 className="w-4 h-4 text-primary" />
                   Margin Partner Program
                 </div>
               </h3>
-              <p className="text-sm text-muted-foreground mb-2">
-                Earn recurring income for every reseller you refer.
+              <p className="text-sm text-foreground mb-2 font-medium">
+                💰 Earn 20% recurring commission on every reseller you refer
               </p>
-              <p className="text-xs text-muted-foreground/70 mb-4">
-                Most affiliates earn monthly income as long as referrals stay active.
+              <p className="text-xs text-muted-foreground mb-4">
+                Get paid monthly as long as your referrals maintain their Pro subscription. No caps, no limits.
               </p>
               
               <div className="grid grid-cols-3 gap-3 mb-4">

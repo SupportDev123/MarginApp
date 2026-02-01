@@ -973,7 +973,7 @@ export default function ItemDetails() {
                   const avgNet = Math.round(avgSoldPrice * (1 - feeRate));
                   return `Based on available market data, we estimate this item sells for around $${Math.round(avgSoldPrice)} gross ($${avgNet} net after fees), resulting in an expected ${profitSign} of about $${profitAmount} at your price.${maxBuyContext} For more accuracy, enter sold comps manually.`;
                 } else {
-                  return `We couldn't find reliable pricing data for this item. Enter sold comps manually to get an accurate profit estimate.`;
+                  return `Insufficient market data to assess profitability. Use Research Mode to manually enter sold comparables for an accurate profit estimate.`;
                 }
               })()}
             </p>

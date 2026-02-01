@@ -331,6 +331,29 @@ export function BuyModeResults({ item, onShare }: BuyModeResultsProps) {
                   : 'at'} market median
             </p>
           )}
+
+          {/* Confidence Indicator */}
+          <div className="mt-3 flex items-center justify-center gap-2">
+            <Badge 
+              variant={buyModeData.confidence === 'high' ? 'default' : buyModeData.confidence === 'medium' ? 'secondary' : 'destructive'}
+              className={cn(
+                "text-[10px] px-2 h-5",
+                buyModeData.confidence === 'high' && "bg-green-500",
+                buyModeData.confidence === 'medium' && "bg-yellow-500 text-black",
+                buyModeData.confidence === 'low' && "bg-red-500/80",
+              )}
+              data-testid="badge-market-confidence"
+            >
+              {buyModeData.confidence === 'high' ? 'High Confidence' : 
+               buyModeData.confidence === 'medium' ? 'Moderate Confidence' : 
+               'Low Confidence'}
+            </Badge>
+            {buyModeData.confidenceReason && (
+              <span className="text-[10px] text-muted-foreground">
+                {buyModeData.confidenceReason}
+              </span>
+            )}
+          </div>
         </motion.div>
 
         <Card className="p-4">

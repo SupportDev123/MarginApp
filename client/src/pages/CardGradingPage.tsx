@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider } from "@/components/ui/tooltip";
 import { useToast } from "@/hooks/use-toast";
 import { useAuth } from "@/hooks/use-auth";
 import { apiRequest } from "@/lib/queryClient";
@@ -305,6 +306,31 @@ export default function CardGradingPage() {
                 </Card>
               )}
 
+              <Card className="p-4 bg-muted/30 border-muted">
+                <h3 className="font-semibold mb-3 flex items-center gap-2 text-base">
+                  <Zap className="w-4 h-4 text-yellow-500" />
+                  Upload Tips
+                </h3>
+                <ul className="space-y-2 text-sm text-foreground/80">
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold min-w-fit">📷</span>
+                    <span><strong>Clear photo:</strong> Use bright natural lighting and focus on the entire card</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold min-w-fit">✓</span>
+                    <span><strong>Both sides:</strong> Card front and back for more accurate predictions</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold min-w-fit">🎯</span>
+                    <span><strong>Flat surface:</strong> Lay the card flat to avoid glare and shadows</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-primary font-bold min-w-fit">💬</span>
+                    <span><strong>Optional details:</strong> Add card name, year, and set for context</span>
+                  </li>
+                </ul>
+              </Card>
+
               <Card className="p-4">
                 <h3 className="font-semibold mb-3 flex items-center gap-2">
                   <Info className="w-4 h-4 text-muted-foreground" />
@@ -367,32 +393,81 @@ export default function CardGradingPage() {
                   <Award className="w-4 h-4 text-primary" />
                   What We Analyze
                 </h3>
-                <div className="grid grid-cols-2 gap-2 text-sm">
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-emerald-500" />
-                    <span>Centering (F/B)</span>
+                <TooltipProvider>
+                  <div className="grid grid-cols-2 gap-2 text-sm">
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <div className="flex items-center gap-2 cursor-help hover:text-primary transition-colors">
+                          <CheckCircle className="w-4 h-4 text-emerald-500" />
+                          <span>Centering (F/B)</span>
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        How centered the image is on the card (front & back)
+                      </TooltipContent>
+                    </Tooltip>
+
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <div className="flex items-center gap-2 cursor-help hover:text-primary transition-colors">
+                          <CheckCircle className="w-4 h-4 text-emerald-500" />
+                          <span>All 4 Corners</span>
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        Sharpness and condition of all corner points
+                      </TooltipContent>
+                    </Tooltip>
+
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <div className="flex items-center gap-2 cursor-help hover:text-primary transition-colors">
+                          <CheckCircle className="w-4 h-4 text-emerald-500" />
+                          <span>Edge Quality</span>
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        Wear and damage along card edges
+                      </TooltipContent>
+                    </Tooltip>
+
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <div className="flex items-center gap-2 cursor-help hover:text-primary transition-colors">
+                          <CheckCircle className="w-4 h-4 text-emerald-500" />
+                          <span>Surface Defects</span>
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        Scratches, wear, or printing imperfections
+                      </TooltipContent>
+                    </Tooltip>
+
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <div className="flex items-center gap-2 cursor-help hover:text-primary transition-colors">
+                          <CheckCircle className="w-4 h-4 text-emerald-500" />
+                          <span>ROI Calculator</span>
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        Estimates profit from grading vs selling raw
+                      </TooltipContent>
+                    </Tooltip>
+
+                    <Tooltip>
+                      <TooltipTrigger asChild>
+                        <div className="flex items-center gap-2 cursor-help hover:text-primary transition-colors">
+                          <CheckCircle className="w-4 h-4 text-emerald-500" />
+                          <span>Submission Prep</span>
+                        </div>
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        Step-by-step checklist for PSA submission
+                      </TooltipContent>
+                    </Tooltip>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-emerald-500" />
-                    <span>All 4 Corners</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-emerald-500" />
-                    <span>Edge Quality</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-emerald-500" />
-                    <span>Surface Defects</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-emerald-500" />
-                    <span>ROI Calculator</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-4 h-4 text-emerald-500" />
-                    <span>Submission Prep</span>
-                  </div>
-                </div>
+                </TooltipProvider>
               </Card>
 
               <Button 
@@ -473,6 +548,21 @@ export default function CardGradingPage() {
                     </>
                   )}
                 </div>
+
+                {/* PSA Grading Scale Reference */}
+                <div className="mt-4 pt-4 border-t border-border/30 text-xs text-muted-foreground">
+                  <p className="font-semibold text-foreground mb-2">PSA 10-Point Grading Scale:</p>
+                  <div className="grid grid-cols-2 gap-1.5 text-xs">
+                    <div><span className="font-mono">10</span> - Gem Mint (Perfect)</div>
+                    <div><span className="font-mono">9</span> - Mint</div>
+                    <div><span className="font-mono">8</span> - NM/Mint</div>
+                    <div><span className="font-mono">7</span> - NM</div>
+                    <div><span className="font-mono">6</span> - Excellent</div>
+                    <div><span className="font-mono">5</span> - Good +</div>
+                  </div>
+                  <p className="mt-2 text-muted-foreground/70">Also compatible with BGS, CGC, SGC standards</p>
+                </div>
+              </Card>
               </Card>
 
               {imagePreview && (
