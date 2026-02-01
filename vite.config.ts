@@ -6,7 +6,7 @@ import { visualizer } from "rollup-plugin-visualizer";
 
 export default defineConfig({
   plugins: [
-    react({ jsxRuntime: 'classic' }),
+    react({ jsxRuntime: 'automatic' }),
     runtimeErrorOverlay(),
     visualizer({
       open: false,

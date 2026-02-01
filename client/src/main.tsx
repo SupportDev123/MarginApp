@@ -1,6 +1,10 @@
+import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
+
+// Make React globally available
+(window as any).React = React;
 
 // Global error handlers to capture runtime errors on mobile
 window.addEventListener("error", (e) => {
