@@ -1,4 +1,4 @@
-import type { Express } from "express";
+import type { Express, Request, Response, NextFunction } from "express";
 import express from "express";
 import { syncPrintfulProducts, submitOrderToPrintful, createPrintfulClient } from "./printful";
 import { createServer, type Server } from "http";
@@ -15,6 +15,10 @@ import { saveSubscription, removeSubscription, getVapidPublicKey, isPushEnabled 
 import { eq, and, sql, desc } from "drizzle-orm";
 import OpenAI from "openai";
 import type { SoldComp, CompsResult } from "@shared/schema";
+import { cache, cacheKeys } from "./cache-service";
+import { AppError, ErrorCode, toAppError } from "./error-handling";
+import { callEbayWithRetry, withTimeout } from "./retry-strategy";
+import { trackApiCall, monitoring } from "./monitoring";
 import { logCompsRequest } from "./comps-logger";
 import { parseCardTitle, getParallelsForCard, isSportsCardCategory } from "@shared/cardParallels";
 import { getUncachableStripeClient, getStripePublishableKey } from "./stripeClient";
@@ -9145,12 +9149,44 @@ Return a JSON object with EXACTLY these fields:
         return res.json({ error: "Could not identify item" });
       }
       
-      // Fetch comps for pricing
-      const compsResult = await fetchCompsWithFallback(
-        identified.searchQuery || identified.title,
-        identified.condition || 'Used',
-        identified.category || 'Other'
-      );
+      // Fetch comps for pricing - with caching, retry, and error handling
+      const category = identified.category || 'Other';
+      const searchQuery = identified.searchQuery || identified.title;
+      const condition = identified.condition || 'Used';
+      
+      let compsResult: any = null;
+      try {
+        // Try to get from cache first (4 weeks for shoes, 1 week for others, 24h for cards)
+        const compsKey = cacheKeys.ebayComps(searchQuery);
+        const { data: cached, source } = await cache.getOrFetch(
+          compsKey,
+          async () => {
+            // Use retry logic with timeout for eBay API
+            return await withTimeout(
+              callEbayWithRetry(() =>
+                fetchCompsWithFallback(searchQuery, condition, category)
+              ),
+              30000 // 30 second timeout
+            );
+          },
+          category // Pass category for smart TTL (24h for cards, 4w for shoes, etc)
+        );
+        
+        compsResult = cached;
+        console.log(`[ARScan] Comps ${source === 'cached' ? 'CACHED' : 'FRESH'} (${category}): ${cached?.comps?.length || 0} comps`);
+        
+        // Track successful eBay API call
+        await trackApiCall('ebay', async () => ({}));
+      } catch (error: any) {
+        console.error(`[ARScan] Comps fetch failed: ${error.message}`);
+        // Track failed eBay API call
+        await trackApiCall('ebay', async () => { throw error; }).catch(() => {});
+        
+        // Convert to app error with user-friendly message
+        const appError = toAppError(error, ErrorCode.EBAY_UNAVAILABLE);
+        console.warn(`[ARScan] Using empty fallback due to: ${appError.getUserMessage().message}`);
+        compsResult = { comps: [] }; // Graceful fallback
+      }
       
       const comps = compsResult?.comps || [];
       if (comps.length === 0) {

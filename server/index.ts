@@ -1,5 +1,6 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
+import { AppError, toAppError } from "./error-handling";
 import { serveStatic } from "./static";
 import { createServer } from "http";
 import { runMigrations } from 'stripe-replit-sync';
@@ -132,6 +133,15 @@ export function log(message: string, source = "express") {
 
   console.log(`${formattedTime} [${source}] ${message}`);
 }
+
+// Global error handler middleware - catches all errors from routes
+app.use((err: any, req: Request, res: Response, next: NextFunction) => {
+  console.error('[ErrorHandler]', err);
+  const appError = toAppError(err);
+  const statusCode = appError.getStatusCode();
+  
+  res.status(statusCode).json(appError.toJSON());
+});
 
 app.use((req, res, next) => {
   const start = Date.now();
