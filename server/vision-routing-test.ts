@@ -94,8 +94,8 @@ async function findBestCategory(embedding: number[]): Promise<{ category: string
         WHERE embedding IS NOT NULL
       `);
       
-      if (result.rows[0]?.min_distance !== null) {
-        const distance = parseFloat(result.rows[0].min_distance);
+      if (result.rows[0]?.min_distance !== null && result.rows[0]?.min_distance !== undefined) {
+        const distance = parseFloat(String(result.rows[0]?.min_distance ?? '0'));
         const score = distanceToSimilarity(distance);
         
         if (!bestMatch || score > bestMatch.score) {

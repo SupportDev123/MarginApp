@@ -168,8 +168,7 @@ export async function fetchSoldItemsFromSerpApi(
         const soldPrice = item.price?.extracted || 0;
         const shippingCost = item.shipping?.extracted ? `$${item.shipping.extracted.toFixed(2)}` : 'Free';
         
-        // Capture sold_date from SerpAPI if available (recently added feature)
-        const dateSold = item.sold_date || item.date_sold || item.soldDate || 'Recently';
+        const dateSold = (item as any)?.sold_date || (item as any)?.date_sold || (item as any)?.soldDate || 'Recently';
         
         const totalPrice = soldPrice + (item.shipping?.extracted || 0);
         const comp = {
@@ -354,8 +353,7 @@ export async function fetchUserSelectableComps(
         const soldPrice = item.price?.extracted || 0;
         const shippingCost = item.shipping?.extracted || 0;
         
-        // Capture sold_date from SerpAPI if available (recently added feature)
-        const dateSold = item.sold_date || item.date_sold || item.soldDate || 'Recently';
+        const dateSold = (item as any)?.sold_date || (item as any)?.date_sold || (item as any)?.soldDate || 'Recently';
         
         return {
           id: `serp-${Date.now()}-${index}`,
