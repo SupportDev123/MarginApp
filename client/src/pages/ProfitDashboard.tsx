@@ -257,7 +257,6 @@ export default function ProfitDashboard() {
             Scan Now
           </Button>
         </Link>
-        </Card>
 
         <div className="grid grid-cols-2 gap-3">
           <Card className="p-4">

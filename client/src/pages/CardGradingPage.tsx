@@ -563,7 +563,6 @@ export default function CardGradingPage() {
                   <p className="mt-2 text-muted-foreground/70">Also compatible with BGS, CGC, SGC standards</p>
                 </div>
               </Card>
-              </Card>
 
               {imagePreview && (
                 <Card className="p-4">
