@@ -17,7 +17,7 @@ import OpenAI from "openai";
 import type { SoldComp, CompsResult } from "@shared/schema";
 import { cache, cacheKeys } from "./cache-service";
 import { AppError, ErrorCode, toAppError } from "./error-handling";
-import { callEbayWithRetry, withTimeout } from "./retry-strategy";
+import { callEbayWithRetry, callStripeWithRetry, withTimeout } from "./retry-strategy";
 import { trackApiCall, monitoring } from "./monitoring";
 import { logCompsRequest } from "./comps-logger";
 import { parseCardTitle, getParallelsForCard, isSportsCardCategory } from "@shared/cardParallels";
@@ -1561,22 +1561,26 @@ export async function registerRoutes(
       const user = req.user;
       const stripe = await getUncachableStripeClient();
       
-      // Get or create Stripe customer
+      // Get or create Stripe customer with retry
       let customerId = user.stripeCustomerId;
       if (!customerId) {
-        const customer = await stripe.customers.create({
-          metadata: { userId: String(user.id), username: user.username }
-        });
+        const customer = await callStripeWithRetry(() =>
+          stripe.customers.create({
+            metadata: { userId: String(user.id), username: user.username }
+          })
+        );
         await storage.updateUserSubscription(user.id, { stripeCustomerId: customer.id });
         customerId = customer.id;
       }
       
-      // Find the Pro price from Stripe
-      const prices = await stripe.prices.list({
-        active: true,
-        type: 'recurring',
-        limit: 10
-      });
+      // Find the Pro price from Stripe with retry
+      const prices = await callStripeWithRetry(() =>
+        stripe.prices.list({
+          active: true,
+          type: 'recurring',
+          limit: 10
+        })
+      );
       
       // Find the Margin Pro price ($24.99/month)
       const proPrice = prices.data.find(p => {
@@ -1590,20 +1594,28 @@ export async function registerRoutes(
       // Create checkout session - use X-Forwarded-Proto for Replit environment
       const protocol = req.get('X-Forwarded-Proto') || req.protocol || 'https';
       const baseUrl = `${protocol}://${req.get('host')}`;
-      const session = await stripe.checkout.sessions.create({
-        customer: customerId,
-        payment_method_types: ['card'],
-        line_items: [{ price: proPrice.id, quantity: 1 }],
-        mode: 'subscription',
-        allow_promotion_codes: true, // Enable promo codes at checkout
-        success_url: `${baseUrl}/settings?upgraded=true`,
-        cancel_url: `${baseUrl}/settings`,
-      });
+      const session = await callStripeWithRetry(() =>
+        stripe.checkout.sessions.create({
+          customer: customerId,
+          payment_method_types: ['card'],
+          line_items: [{ price: proPrice.id, quantity: 1 }],
+          mode: 'subscription',
+          allow_promotion_codes: true, // Enable promo codes at checkout
+          success_url: `${baseUrl}/settings?upgraded=true`,
+          cancel_url: `${baseUrl}/settings`,
+        })
+      );
       
+      // Track successful Stripe call
+      await trackApiCall('stripe', async () => ({}));
       res.json({ url: session.url });
     } catch (error: any) {
       console.error("Checkout error:", error);
-      res.status(500).json({ error: error.message || "Checkout failed" });
+      // Track failed Stripe call
+      await trackApiCall('stripe', async () => { throw error; }).catch(() => {});
+      
+      const appError = toAppError(error, ErrorCode.STRIPE_UNAVAILABLE);
+      res.status(appError.getStatusCode()).json(appError.toJSON());
     }
   });
 

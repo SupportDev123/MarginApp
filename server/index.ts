@@ -1,6 +1,7 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { AppError, toAppError } from "./error-handling";
+import { monitoring } from "./monitoring";
 import { serveStatic } from "./static";
 import { createServer } from "http";
 import { runMigrations } from 'stripe-replit-sync';
@@ -249,6 +250,27 @@ app.use((req, res, next) => {
     },
   );
 })();
+
+// Metrics endpoint - view API health and performance
+app.get('/api/admin/metrics', async (req: any, res) => {
+  try {
+    if (!req.isAuthenticated?.() || !req.user?.isAdmin) {
+      return res.status(403).json({ error: 'Admin access required' });
+    }
+    
+    const metrics = monitoring.getAllMetrics();
+    const health = monitoring.getHealthStatus();
+    
+    res.json({
+      timestamp: new Date().toISOString(),
+      metrics,
+      health,
+      prometheus: monitoring.toPrometheus(),
+    });
+  } catch (error: any) {
+    res.status(500).json({ error: error.message });
+  }
+});
 
 // Admin endpoint to test email sending
 app.post('/api/admin/test-email', async (req: any, res) => {

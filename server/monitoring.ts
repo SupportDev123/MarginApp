@@ -114,6 +114,54 @@ class MonitoringService {
   }
 
   /**
+   * Get health status for all APIs
+   */
+  getHealthStatus() {
+    const result: Record<string, any> = {};
+    const apis: ApiName[] = ['ebay', 'openai', 'serpapi', 'stripe', 'google', 'database'];
+    for (const api of apis) {
+      const metrics = this.getMetrics(api);
+      const failureRate = parseFloat(metrics.failureRate);
+      
+      let status = 'healthy';
+      if (metrics.isUnavailable) {
+        status = 'down';
+      } else if (failureRate > this.thresholds.failureRatePercent) {
+        status = 'degraded';
+      }
+      
+      result[api] = {
+        status,
+        failureRate: failureRate.toFixed(1) + '%',
+        avgLatencyMs: metrics.avgLatencyMs,
+        totalRequests: metrics.totalRequests,
+      };
+    }
+    return result;
+  }
+
+  /**
+   * Export metrics in Prometheus format
+   */
+  toPrometheus() {
+    const lines: string[] = [];
+    const apis: ApiName[] = ['ebay', 'openai', 'serpapi', 'stripe', 'google', 'database'];
+    
+    for (const api of apis) {
+      const metrics = this.getMetrics(api);
+      lines.push(`# HELP api_calls_total Total API calls`);
+      lines.push(`api_calls_total{service="${api}"} ${metrics.totalRequests}`);
+      lines.push(`api_calls_success{service="${api}"} ${metrics.success}`);
+      lines.push(`api_calls_failed{service="${api}"} ${metrics.failed}`);
+      lines.push(`api_call_duration_ms{service="${api}",percentile="avg"} ${metrics.avgLatencyMs}`);
+      lines.push(`api_failure_rate{service="${api}"} ${parseFloat(metrics.failureRate)}`);
+      lines.push('');
+    }
+    
+    return lines.join('\n');
+  }
+
+  /**
    * Check if alerts should be triggered
    */
   private checkAlerts(api: ApiName): void {
